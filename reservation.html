@@ -41,9 +41,9 @@
             </div>
 
             <form
-    class="reservation-form"
-    action="https://formspree.io/f/mjgdgrgv"
-    method="POST">
+    <form
+    id="reservation-form"
+    class="reservation-form">
 
 <input
     type="hidden"
@@ -94,6 +94,123 @@
         </div>
 
     </section>
+<div id="success-popup" class="success-popup">
+
+    <div class="popup-content">
+
+        <h2>✓ Réservation envoyée</h2>
+
+        <p>
+            Merci pour votre réservation.
+            Nous vous contacterons rapidement afin de confirmer votre table.
+        </p>
+
+        <button onclick="closePopup()">
+            Fermer
+        </button>
+
+    </div>
+<div id="success-popup" class="success-popup">
+
+    <div class="popup-content">
+
+        <h2>✓ Réservation envoyée</h2>
+
+        <p>
+            Merci pour votre réservation.
+            Nous vous contacterons rapidement afin de confirmer votre table.
+        </p>
+
+        <button onclick="closePopup()">
+            Fermer
+        </button>
+
+    </div>
+
+<div id="success-popup" class="success-popup">
+
+    <div class="popup-content">
+
+        <h2>✓ Réservation envoyée</h2>
+
+        <p>
+            Merci pour votre réservation.
+            Nous vous contacterons rapidement afin de confirmer votre table.
+        </p>
+
+        <button onclick="closePopup()">
+            Fermer
+        </button>
+
+    </div>
+<div id="success-popup" class="success-popup">
+
+    <div class="popup-content">
+
+        <h2>✓ Réservation envoyée</h2>
+
+        <p>
+            Merci pour votre réservation.
+            Nous vous contacterons rapidement afin de confirmer votre table.
+        </p>
+
+        <button onclick="closePopup()">
+            Fermer
+        </button>
+
+    </div>
+<div id="success-popup" class="success-popup">
+
+    <div class="popup-content">
+
+        <h2>✓ Réservation envoyée</h2>
+
+        <p>
+            Merci pour votre réservation.
+            Nous vous contacterons rapidement afin de confirmer votre table.
+        </p>
+
+        <button onclick="closePopup()">
+            Fermer
+        </button>
+
+    </div>
+<script>
+
+const form = document.getElementById("reservation-form");
+const popup = document.getElementById("success-popup");
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(
+        "https://formspree.io/f/mjgdgrgv",
+        {
+            method:"POST",
+            body:data,
+            headers:{
+                Accept:"application/json"
+            }
+        }
+    );
+
+    if(response.ok){
+
+        popup.classList.add("active");
+
+        form.reset();
+    }
+
+});
+
+function closePopup(){
+    popup.classList.remove("active");
+}
+
+</script>
 
 </body>
 
