@@ -40,26 +40,28 @@
 
             </div>
 
-            <form class="reservation-form">
+            <form
+    class="reservation-form"
+    action="https://formspree.io/f/mjgdgrgv"
+    method="POST">
 
-                <input type="text" placeholder="Nom complet" required>
+                <input type="text" name="nom" placeholder="Nom complet" required>
 
-                <input type="email" placeholder="Adresse e-mail" required>
+                <input type="email" name="email" placeholder="Adresse e-mail" required>
 
-                <input type="tel" placeholder="Téléphone" required>
+                <input type="tel" name="telephone" placeholder="Téléphone" required>
 
                 <div class="field">
     <label>Date de réservation</label>
-    <input type="date" required>
+    <input type="date" name="date" required>
 </div>
 
 <div class="field">
     <label>Heure souhaitée</label>
-    <input type="time" required>
+    <input type="time" name="heure" required>
 </div>
 
-                <select required>
-                    <option value="">Nombre de personnes</option>
+                <select name="personnes" required>
                     <option>1 personne</option>
                     <option>2 personnes</option>
                     <option>3 personnes</option>
@@ -70,8 +72,14 @@
                     <option>8 personnes</option>
                 </select>
 
-                <textarea placeholder="Informations complémentaires"></textarea>
-
+                <textarea
+    name="message"
+    placeholder="Informations complémentaires">
+</textarea>
+<input
+    type="hidden"
+    name="_subject"
+    value="Nouvelle réservation - Le Tablier d'Ambre">
                 <button type="submit">
                     Réserver
                 </button>
