@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation | Le Tablier d'Ambre</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reservation.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">
+        ← Accueil
+    </a>
+
+    <section class="reservation-page">
+
+        <div class="overlay"></div>
+
+        <div class="reservation-container">
+
+            <div class="reservation-info">
+
+                <span class="subtitle">RÉSERVATION</span>
+
+                <h1>Réservez votre table</h1>
+
+                <div class="gold-line"></div>
+
+                <p>
+                    Nous serons ravis de vous accueillir au Tablier d'Ambre.
+                    Réservez votre table en quelques instants et profitez
+                    d'une expérience gastronomique unique.
+                </p>
+
+            </div>
+
+            <form class="reservation-form">
+
+                <input type="text" placeholder="Nom complet" required>
+
+                <input type="email" placeholder="Adresse e-mail" required>
+
+                <input type="tel" placeholder="Téléphone" required>
+
+                <input type="date" required>
+
+                <input type="time" required>
+
+                <select required>
+                    <option value="">Nombre de personnes</option>
+                    <option>1 personne</option>
+                    <option>2 personnes</option>
+                    <option>3 personnes</option>
+                    <option>4 personnes</option>
+                    <option>5 personnes</option>
+                    <option>6 personnes</option>
+                    <option>7 personnes</option>
+                    <option>8 personnes</option>
+                </select>
+
+                <textarea placeholder="Informations complémentaires"></textarea>
+
+                <button type="submit">
+                    Réserver
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

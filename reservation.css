@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+.reservation-page{
+    min-height:100vh;
+
+    background:url("images/engin_akyurt-glass-7452924_1920.jpg") center/cover;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 25px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,40,0.45);
+}
+
+.reservation-container{
+    position:relative;
+    z-index:2;
+
+    width:100%;
+    max-width:1200px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+}
+
+.reservation-info{
+    color:white;
+}
+
+.subtitle{
+    color:#c8a96b;
+    letter-spacing:4px;
+}
+
+.reservation-info h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(3rem,8vw,6rem);
+
+    margin:20px 0;
+}
+
+.gold-line{
+    width:150px;
+    height:2px;
+
+    background:#c8a96b;
+
+    margin-bottom:30px;
+}
+
+.reservation-info p{
+    line-height:1.9;
+    color:#e5e5e5;
+}
+
+.reservation-form{
+    background:rgba(245,241,234,.95);
+
+    padding:40px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea{
+    padding:15px;
+
+    border:none;
+
+    font-size:1rem;
+}
+
+.reservation-form textarea{
+    min-height:120px;
+    resize:none;
+}
+
+.reservation-form button{
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.reservation-form button:hover{
+    background:#c8a96b;
+}
+
+.back-btn{
+    position:absolute;
+
+    top:25px;
+    left:25px;
+
+    z-index:999;
+
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid #c8a96b;
+
+    padding:12px 20px;
+
+    background:rgba(0,0,0,.5);
+}
+
+@media(max-width:768px){
+
+    .reservation-container{
+        grid-template-columns:1fr;
+    }
+
+    .reservation-info{
+        text-align:center;
+    }
+
+    .gold-line{
+        margin:20px auto 30px;
+    }
+
+    .reservation-form{
+        padding:25px;
+    }
+
+    .back-btn{
+        top:15px;
+        left:15px;
+    }
+}

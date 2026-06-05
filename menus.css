@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+.menu-page{
+    min-height:100vh;
+
+    background-image:url("images/8f08ea7710dabbf5de6fc5ae2860a7fc.jpeg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    padding:120px 25px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.82);
+}
+
+.menu-content{
+    position:relative;
+    z-index:2;
+
+    max-width:1200px;
+    margin:auto;
+
+    color:white;
+}
+
+.subtitle{
+    color:#c8a96b;
+    letter-spacing:4px;
+}
+
+.menu-content h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:clamp(3rem,8vw,6rem);
+
+    margin:20px 0;
+}
+
+.gold-line{
+    width:180px;
+    height:2px;
+
+    background:#c8a96b;
+
+    margin-bottom:60px;
+}
+
+.menus-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.menu-card{
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(200,169,107,.3);
+
+    padding:40px 30px;
+
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.menu-card h2{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:#c8a96b;
+}
+
+.price{
+    font-size:2.5rem;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.menu-card ul{
+    list-style:none;
+}
+
+.menu-card li{
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.back-btn{
+    position:fixed;
+
+    top:25px;
+    left:25px;
+
+    z-index:999;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #c8a96b;
+
+    padding:12px 20px;
+
+    background:rgba(0,0,0,.5);
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#c8a96b;
+}
+
+@media(max-width:768px){
+
+    .menu-page{
+        padding:100px 20px;
+    }
+
+    .menu-content h1{
+        font-size:3.5rem;
+    }
+}

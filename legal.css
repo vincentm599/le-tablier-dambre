@@ -1,0 +1,210 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+/* PAGE */
+
+.legal-page{
+    min-height:100vh;
+
+    background-image:url("images/engin_akyurt-glass-7452924_1920.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    padding:120px 25px;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.80);
+}
+
+/* CONTENU */
+
+.legal-content{
+    position:relative;
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    color:white;
+}
+
+/* SOUS-TITRE */
+
+.subtitle{
+    display:block;
+
+    color:#c8a96b;
+
+    letter-spacing:4px;
+
+    font-size:0.9rem;
+
+    margin-bottom:15px;
+}
+
+/* TITRE */
+
+.legal-content h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:clamp(3rem,8vw,6rem);
+
+    margin-bottom:20px;
+
+    line-height:1;
+}
+
+/* TRAIT DORÉ */
+
+.gold-line{
+    width:180px;
+    height:2px;
+
+    background:#c8a96b;
+
+    margin-bottom:40px;
+}
+
+/* TITRES DE SECTION */
+
+.legal-content h2{
+    color:#c8a96b;
+
+    margin-top:40px;
+    margin-bottom:15px;
+
+    font-size:1.5rem;
+}
+
+/* PARAGRAPHES */
+
+.legal-content p{
+    color:#e5e5e5;
+
+    line-height:1.9;
+
+    margin-bottom:15px;
+}
+
+/* LISTES */
+
+.legal-content ul{
+    padding-left:25px;
+
+    margin-bottom:20px;
+}
+
+.legal-content li{
+    color:#e5e5e5;
+
+    margin-bottom:10px;
+
+    line-height:1.8;
+}
+
+/* CITATION */
+
+blockquote{
+    margin-top:60px;
+
+    padding-left:25px;
+
+    border-left:3px solid #c8a96b;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2rem;
+
+    line-height:1.5;
+
+    color:#c8a96b;
+}
+
+/* BOUTON RETOUR */
+
+.back-btn{
+    position:fixed;
+
+    top:25px;
+    left:25px;
+
+    z-index:999;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #c8a96b;
+
+    padding:12px 20px;
+
+    background:rgba(0,0,0,0.5);
+
+    backdrop-filter:blur(5px);
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#c8a96b;
+
+    color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .legal-page{
+        padding:100px 20px;
+    }
+
+    .legal-content h1{
+        font-size:3.5rem;
+    }
+
+    .legal-content h2{
+        font-size:1.3rem;
+    }
+
+    .legal-content p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    blockquote{
+        font-size:1.5rem;
+        padding-left:20px;
+    }
+
+    .back-btn{
+        top:15px;
+        left:15px;
+
+        padding:10px 15px;
+
+        font-size:0.9rem;
+    }
+
+    .gold-line{
+        width:120px;
+    }
+}

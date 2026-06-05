@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+.privacy-page{
+    min-height:100vh;
+
+    background-image:url("images/engin_akyurt-glass-7452924_1920.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    padding:120px 25px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.80);
+}
+
+.privacy-content{
+    position:relative;
+    z-index:2;
+
+    max-width:900px;
+    margin:auto;
+
+    color:white;
+}
+
+.subtitle{
+    color:#c8a96b;
+    letter-spacing:4px;
+}
+
+.privacy-content h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:clamp(3rem,8vw,6rem);
+    margin:20px 0;
+}
+
+.privacy-content h2{
+    color:#c8a96b;
+    margin-top:35px;
+    margin-bottom:15px;
+}
+
+.gold-line{
+    width:180px;
+    height:2px;
+    background:#c8a96b;
+    margin-bottom:40px;
+}
+
+.privacy-content p,
+.privacy-content li{
+    color:#e5e5e5;
+    line-height:1.9;
+}
+
+.privacy-content ul{
+    padding-left:25px;
+    margin:20px 0;
+}
+
+blockquote{
+    margin-top:50px;
+
+    border-left:3px solid #c8a96b;
+
+    padding-left:25px;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2rem;
+
+    color:#c8a96b;
+}
+
+.back-btn{
+    position:fixed;
+
+    top:25px;
+    left:25px;
+
+    z-index:999;
+
+    color:white;
+
+    text-decoration:none;
+
+    border:1px solid #c8a96b;
+
+    padding:12px 20px;
+
+    background:rgba(0,0,0,.5);
+}
+
+.back-btn:hover{
+    background:#c8a96b;
+}
+
+@media(max-width:768px){
+
+    .privacy-page{
+        padding:100px 20px;
+    }
+
+    blockquote{
+        font-size:1.5rem;
+    }
+}

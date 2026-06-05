@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galerie | Le Tablier d'Ambre</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="galerie.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">
+        ← Accueil
+    </a>
+
+    <section class="gallery-header">
+
+        <div class="overlay"></div>
+
+        <div class="header-content">
+
+            <span>GALERIE</span>
+
+            <h1>Découvrez notre univers</h1>
+
+            <div class="gold-line"></div>
+
+            <p>
+                Quelques instants capturés au Tablier d'Ambre.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="gallery-grid">
+
+        <img src="images/atanaspaskalev-luxury-4330591_1920.jpg" alt="">
+        <img src="images/stefanopenna-restaurant-2816392_1920.jpg" alt="">
+        <img src="images/rosarioesposito-food-3098716_1920.jpg" alt="">
+        <img src="images/takedahrs-ox-tongue-5143857_1920.jpg" alt="">
+        <img src="images/speedwagwon-restaurant-7084703_1920.jpg" alt="">
+        <img src="images/lawjr-dessert-4014377_1920.jpg" alt="">
+        <img src="images/cave-a-vin-1.jpg" alt="">
+        <img src="images/ricky8955555-food-3503249_1920.jpg" alt="">
+
+    </section>
+    <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const images = document.querySelectorAll(".gallery-grid img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    images.forEach(function(img){
+
+        img.addEventListener("click", function(){
+
+            lightbox.classList.add("active");
+            lightboxImg.src = this.src;
+
+        });
+
+    });
+
+    lightbox.addEventListener("click", function(){
+
+        lightbox.classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</body>
+
+</html>

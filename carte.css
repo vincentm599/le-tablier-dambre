@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+.menu-page{
+    min-height:100vh;
+
+    background-image:url("images/groupe-copines-est-assise-dans-restaurant-elles-prennent-toutes-photos-leur-smartphone_935552-6818.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+
+    padding:120px 25px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+}
+
+.menu-content{
+    position:relative;
+    z-index:2;
+
+    max-width:1000px;
+    margin:auto;
+
+    color:white;
+}
+
+.subtitle{
+    color:#c8a96b;
+    letter-spacing:4px;
+}
+
+.menu-content h1{
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:clamp(3rem,8vw,6rem);
+
+    margin:20px 0;
+}
+
+.gold-line{
+    width:180px;
+    height:2px;
+
+    background:#c8a96b;
+
+    margin-bottom:60px;
+}
+
+.category{
+    margin-bottom:60px;
+}
+
+.category h2{
+    color:#c8a96b;
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:2.2rem;
+
+    margin-bottom:25px;
+}
+
+.dish{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.dish span:first-child{
+    color:white;
+}
+
+.dish span:last-child{
+    color:#c8a96b;
+    font-weight:bold;
+}
+
+.back-btn{
+    position:fixed;
+
+    top:25px;
+    left:25px;
+
+    z-index:999;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #c8a96b;
+
+    padding:12px 20px;
+
+    background:rgba(0,0,0,.5);
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#c8a96b;
+}
+
+@media(max-width:768px){
+
+    .menu-page{
+        padding:100px 20px;
+    }
+
+    .menu-content h1{
+        font-size:3.5rem;
+    }
+
+    .dish{
+        font-size:0.95rem;
+    }
+}
